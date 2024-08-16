@@ -66,6 +66,7 @@ window.onload = () => {
   let productSection = document.querySelector("#all-products");
 
   window.onscroll = () => {
+    // 스크롤을 내렸을때 API요청이 가기 위함
     let position = productSection.getBoundingClientRect().top - (window.scrollY + window.innerHeight);
 
     if (status == "idle" && position <= 0) {
